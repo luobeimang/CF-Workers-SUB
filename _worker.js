@@ -14,9 +14,12 @@ let cacheTTL = 24 ;//小时，缓存时长
 
 //节点链接 + 订阅链接
 let MainData = `
-vless://b7a392e2-4ef0-4496-90bc-1c37bb234904@cf.090227.xyz:443?encryption=none&security=tls&sni=edgetunnel-2z2.pages.dev&fp=random&type=ws&host=edgetunnel-2z2.pages.dev&path=%2F%3Fed%3D2048#%E5%8A%A0%E5%85%A5%E6%88%91%E7%9A%84%E9%A2%91%E9%81%93t.me%2FCMLiussss%E8%A7%A3%E9%94%81%E6%9B%B4%E5%A4%9A%E4%BC%98%E9%80%89%E8%8A%82%E7%82%B9
-https://sub.xf.free.hr/auto
-`
+https://kikiwana.filegear-sg.me/4326e00d-6f7d-4fe9-a1bd-db74c19bdfc1
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIm5vdGxzIiwNCiAgImFkZCI6ICJ3d3cudmlzYS5jb20uc2ciLA0KICAicG9ydCI6ICI4MCIsDQogICJpZCI6ICJkNDY4YmY2ZC1hYTc2LTQ3MzItZTM5Ny0yMTcwZDk3NjgzZDciLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInZtZXNzLmtpa2lqYW5hLnVzLmtnIiwNCiAgInBhdGgiOiAiLyIsDQogICJ0bHMiOiAiIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiLA0KICAiZnAiOiAiIg0KfQ==
+vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJ0bHMiLAogICJhZGQiOiAidm1lc3Mua2lraWphbmEudXMua2ciLAogICJwb3J0IjogMzQwNTYsCiAgImlkIjogImQ0NjhiZjZkLWFhNzYtNDczMi1lMzk3LTIxNzBkOTc2ODNkNyIsCiAgIm5ldCI6ICJ3cyIsCiAgInR5cGUiOiAibm9uZSIsCiAgImhvc3QiOiAiIiwKICAicGF0aCI6ICIvIiwKICAiYXV0aG9yaXR5IjogIiIsCiAgInRscyI6ICJ0bHMiLAogICJzbmkiOiAiIiwKICAiZnAiOiAiIgp9
+vless://0c145cc5-9d0d-469b-eea0-2fe54be82f10@167.253.152.247:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=0c145cc5.com&fp=chrome&pbk=UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI&type=tcp&headerType=none#reality%7Clft8.love%40xray.com
+vless://74f452a8-5ce8-45cf-ad1b-b5bf834bb524@167.253.152.247:19646?encryption=none&flow=xtls-rprx-vision&security=tls&sni=167-253-152-247.nip.io&fp=chrome&type=tcp&headerType=none#vision%7CX2x9.love%40xray.com
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzfG9CZTQubG92ZUB4cmF5LmNvbSIsDQogICJhZGQiOiAiMTY3LjI1My4xNTIuMjQ3IiwNCiAgInBvcnQiOiAiMTMzMTUiLA0KICAiaWQiOiAiOTE1Yzk1MjgtYzQyZS00ZDMzLWQxZmUtNzhjMTVkZTVkZjkwIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIvOTE1Yzk1MjgiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=`
 
 let urls = [];
 let subconverter = "subapi-loadbalancing.pages.dev"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
