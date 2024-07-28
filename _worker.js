@@ -5,7 +5,7 @@ let mytoken = 'b3b36dcc-df01-6129-17cf-d26473568ad1'; //可以随便取，或者
 let BotToken =''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
 let ChatID =''; //可以为空，或者@userinfobot中获取，/start
 let TG = 0; //小白勿动， 开发者专用，1 为推送所有的访问信息，0 为不推送订阅转换后端的访问信息与异常访问
-let FileName = 'CF-Workers-SUB';
+let FileName = '整合订阅';
 let SUBUpdateTime = 6; //自定义订阅更新时间，单位小时
 let total = 99;//TB
 let timestamp = 4102329600000;//2099-12-31
@@ -19,7 +19,9 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIm5vdGxzIiwNCiAgImFkZCI6ICJ3d3cudmlzYS5j
 vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJ0bHMiLAogICJhZGQiOiAidm1lc3Mua2lraWphbmEudXMua2ciLAogICJwb3J0IjogMzQwNTYsCiAgImlkIjogImQ0NjhiZjZkLWFhNzYtNDczMi1lMzk3LTIxNzBkOTc2ODNkNyIsCiAgIm5ldCI6ICJ3cyIsCiAgInR5cGUiOiAibm9uZSIsCiAgImhvc3QiOiAiIiwKICAicGF0aCI6ICIvIiwKICAiYXV0aG9yaXR5IjogIiIsCiAgInRscyI6ICJ0bHMiLAogICJzbmkiOiAiIiwKICAiZnAiOiAiIgp9
 vless://0c145cc5-9d0d-469b-eea0-2fe54be82f10@167.253.152.247:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=0c145cc5.com&fp=chrome&pbk=UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI&type=tcp&headerType=none#reality%7Clft8.love%40xray.com
 vless://74f452a8-5ce8-45cf-ad1b-b5bf834bb524@167.253.152.247:19646?encryption=none&flow=xtls-rprx-vision&security=tls&sni=167-253-152-247.nip.io&fp=chrome&type=tcp&headerType=none#vision%7CX2x9.love%40xray.com
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzfG9CZTQubG92ZUB4cmF5LmNvbSIsDQogICJhZGQiOiAiMTY3LjI1My4xNTIuMjQ3IiwNCiAgInBvcnQiOiAiMTMzMTUiLA0KICAiaWQiOiAiOTE1Yzk1MjgtYzQyZS00ZDMzLWQxZmUtNzhjMTVkZTVkZjkwIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIvOTE1Yzk1MjgiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=`
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzfG9CZTQubG92ZUB4cmF5LmNvbSIsDQogICJhZGQiOiAiMTY3LjI1My4xNTIuMjQ3IiwNCiAgInBvcnQiOiAiMTMzMTUiLA0KICAiaWQiOiAiOTE1Yzk1MjgtYzQyZS00ZDMzLWQxZmUtNzhjMTVkZTVkZjkwIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIvOTE1Yzk1MjgiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
+
+vless://d3ad5fbb-dfae-4fc4-a1ac-babe8980edb3@34.81.113.106:31009?path=%2F&security=none&encryption=none&type=ws#vmess%7Ctw`
 
 let urls = [];
 let subconverter = "subapi-loadbalancing.pages.dev"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
