@@ -21,7 +21,7 @@ vless://0c145cc5-9d0d-469b-eea0-2fe54be82f10@167.253.152.247:443?encryption=none
 vless://74f452a8-5ce8-45cf-ad1b-b5bf834bb524@167.253.152.247:19646?encryption=none&flow=xtls-rprx-vision&security=tls&sni=167-253-152-247.nip.io&fp=chrome&type=tcp&headerType=none#vision%7CX2x9.love%40xray.com
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzfG9CZTQubG92ZUB4cmF5LmNvbSIsDQogICJhZGQiOiAiMTY3LjI1My4xNTIuMjQ3IiwNCiAgInBvcnQiOiAiMTMzMTUiLA0KICAiaWQiOiAiOTE1Yzk1MjgtYzQyZS00ZDMzLWQxZmUtNzhjMTVkZTVkZjkwIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIvOTE1Yzk1MjgiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
 
-vless://d3ad5fbb-dfae-4fc4-a1ac-babe8980edb3@34.81.113.106:31009?path=%2F&security=none&encryption=none&type=ws#vmess%7Ctw`
+vless://d3ad5fbb-dfae-4fc4-a1ac-babe8980edb3@34.81.113.106:31009?type=ws&security=none&path=%2F#tw`
 
 let urls = [];
 let subconverter = "subapi-loadbalancing.pages.dev"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
