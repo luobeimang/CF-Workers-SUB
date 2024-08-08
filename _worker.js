@@ -36,8 +36,6 @@ hysteria2://1ba75e80-e85c-4bd3-9e3e-51f2337705d8@[2a0d:8140:0:35::19]:47573/?sni
 tuic://1ba75e80-e85c-4bd3-9e3e-51f2337705d8:MW1FCg1QsJ7odoSctZjFhl7o@[2a0d:8140:0:35::19]:47572?sni=www.bing.com&alpn=h3&congestion_control=bbr#RO-Andrei_Tiberiu_Holt
 vless://8313390c-b43d-4a41-a5f0-b2653b16087c@[2a01:4f8:c013:59c0::65]:23223?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.zara.com&fp=chrome&pbk=2IoSz2citqM-_O5_-MhvLGeZVjAe_z2Du_cvwZ9eJm0&type=tcp&headerType=none#DE-Hetzner_Online
 vmess://eyAidiI6ICIyIiwgInBzIjogIkRFLUhldHpuZXJfT25saW5lIiwgImFkZCI6ICJ3d3cudmlzYS5jb20udHciLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiODMxMzM5MGMtYjQzZC00YTQxLWE1ZjAtYjI2NTNiMTYwODdjIiwgImFpZCI6ICIwIiwgInNjeSI6ICJub25lIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJvYml0dWFyaWVzLWNvbWUtbm90LWR1ZS50cnljbG91ZGZsYXJlLmNvbSIsICJwYXRoIjogIi92bWVzcz9lZD0yMDQ4IiwgInRscyI6ICJ0bHMiLCAic25pIjogIm9iaXR1YXJpZXMtY29tZS1ub3QtZHVlLnRyeWNsb3VkZmxhcmUuY29tIiwgImFscG4iOiAiIiwgImZwIjogInJhbmRvbWl6ZWQiLCAiYWxsb3dsbnNlY3VyZSI6ICJmbGFzZSJ9Cg==
-hysteria2://8313390c-b43d-4a41-a5f0-b2653b16087c@[2a01:4f8:c013:59c0::65]:23226/?sni=www.bing.com&insecure=1&alpn=h3&obfs=none#DE-Hetzner_Online
-tuic://8313390c-b43d-4a41-a5f0-b2653b16087c:EOX163Kn5FALjR065BHvAIgT@[2a01:4f8:c013:59c0::65]:23225?sni=www.bing.com&congestion_control=bbr&udp_relay_mode=native&alpn=h3&allow_insecure=1#DE-Hetzner_Online
 `
 
 let urls = [];
