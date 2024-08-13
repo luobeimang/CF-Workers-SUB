@@ -43,6 +43,12 @@ vless://818130f3-1d37-42e8-9c19-6c6309e10921@144.22.133.91:60702?encryption=none
 vless://818130f3-1d37-42e8-9c19-6c6309e10921@fan.yutian.us.kg:443?encryption=none&security=tls&sni=1.kiki.ltd.ua&type=ws&host=1.kiki.ltd.ua&path=%2Fsba-vl%3Fed%3D2048#%E5%B7%B4%E8%A5%BF-2
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlx1NURGNFx1ODk3Ri0zIiwNCiAgImFkZCI6ICJjZmlwLnh4eHh4eHh4LnRrIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjgxODEzMGYzLTFkMzctNDJlOC05YzE5LTZjNjMwOWUxMDkyMSIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAibm9uZSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiMS5raWtpLmx0ZC51YSIsDQogICJwYXRoIjogIi9zYmEtdm0/ZWQ9MjA0OCIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICIxLmtpa2kubHRkLnVhIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
 trojan://818130f3-1d37-42e8-9c19-6c6309e10921@cloudflare.182682.xyz:443?security=tls&sni=1.kiki.ltd.ua&type=ws&host=1.kiki.ltd.ua&path=%2Fsba-tr%3Fed%3D2048#%E5%B7%B4%E8%A5%BF-4
+vless://dc66a47d-60a7-49a9-8846-88a959dae578@152.53.44.79:16101?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.svix.com&fp=chrome&pbk=HF6x7UIK68jo8WBOKG8uROYTbsB6RnvI8Mqd9e5DaGU&type=tcp&headerType=none#AT-netcup
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkFULW5ldGN1cCIsDQogICJhZGQiOiAiYWxpeXVuLjIwOTYudXMua2ciLA0KICAicG9ydCI6ICIyMDk2IiwNCiAgImlkIjogImRjNjZhNDdkLTYwYTctNDlhOS04ODQ2LTg4YTk1OWRhZTU3OCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAibm9uZSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiMi5raWtpLmx0ZC51YSIsDQogICJwYXRoIjogIi92bWVzcz9lZD0yMDQ4IiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIjIua2lraS5sdGQudWEiLA0KICAiYWxwbiI6ICIiLA0KICAiZnAiOiAicmFuZG9taXplZCINCn0=
+
+hysteria2://dc66a47d-60a7-49a9-8846-88a959dae578@152.53.44.79:16102/?sni=www.bing.com&alpn=h3&insecure=1#AT-netcup
+
+tuic://dc66a47d-60a7-49a9-8846-88a959dae578:PkyFw5tF1J5n9teypTc0F5yA@152.53.44.79:16103?sni=www.bing.com&alpn=h3&congestion_control=bbr#AT-netcup
 `
 
 let urls = [];
