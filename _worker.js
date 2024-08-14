@@ -1,7 +1,7 @@
 
 // 部署完成后在网址后面加上这个，获取自建节点和机场聚合节点，/?token=auto或/auto或
 
-let mytoken = 'b3b36dcc-df01-6129-17cf-d26473568ad1'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
+let mytoken = ''; //可以随便取，或者uuid生成，https://1024tools.com/uuid
 let BotToken =''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
 let ChatID =''; //可以为空，或者@userinfobot中获取，/start
 let TG = 0; //小白勿动， 开发者专用，1 为推送所有的访问信息，0 为不推送订阅转换后端的访问信息与异常访问
@@ -14,41 +14,7 @@ let cacheTTL = 24 ;//小时，缓存时长
 
 //节点链接 + 订阅链接
 let MainData = `
-vless://f83a211b-ba8c-4f42-867f-5bd44e324062@192.9.131.244:20201?encryption=none&flow=xtls-rprx-vision&security=reality&sni=addons.mozilla.org&fp=chrome&pbk=48ttP2B_efL9KvWr7LKdrBQzb9NlI7HWMgW_gJdWmmc&type=tcp&headerType=none#US-1
-vless://f83a211b-ba8c-4f42-867f-5bd44e324062@192.9.131.244:20201?encryption=none&security=reality&sni=addons.mozilla.org&fp=chrome&pbk=48ttP2B_efL9KvWr7LKdrBQzb9NlI7HWMgW_gJdWmmc&type=grpc&authority=&serviceName=grpc&mode=gun#US-2
-vless://f83a211b-ba8c-4f42-867f-5bd44e324062@cf.yutian.us.kg:443?encryption=none&security=tls&sni=wa.kiki.ltd.ua&type=ws&host=wa.kiki.ltd.ua&path=%2Fargox-vl%3Fed%3D2048#US-3
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlVTLTQiLA0KICAiYWRkIjogImNmaXAueHh4eHh4eHgudGsiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiZjgzYTIxMWItYmE4Yy00ZjQyLTg2N2YtNWJkNDRlMzI0MDYyIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJub25lIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJ3YS5raWtpLmx0ZC51YSIsDQogICJwYXRoIjogIi9hcmdveC12bT9lZD0yMDQ4IiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIndhLmtpa2kubHRkLnVhIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
-trojan://f83a211b-ba8c-4f42-867f-5bd44e324062@cmcc.090227.xyz:443?security=tls&sni=wa.kiki.ltd.ua&type=ws&host=wa.kiki.ltd.ua&path=%2Fargox-tr%3Fed%3D2048#US-5
-vless://456e3eab-57a7-428a-beba-1882d732d413@193.122.117.76:12001?encryption=none&flow=xtls-rprx-vision&security=reality&sni=addons.mozilla.org&fp=chrome&pbk=EPNDNnNMzt_VzFDcoLBYTzDVKIxCMElyqE_k496F8AE&type=tcp&headerType=none#KR-1
-vless://456e3eab-57a7-428a-beba-1882d732d413@193.122.117.76:12001?encryption=none&security=reality&sni=addons.mozilla.org&fp=chrome&pbk=EPNDNnNMzt_VzFDcoLBYTzDVKIxCMElyqE_k496F8AE&type=grpc&authority=&serviceName=grpc&mode=gun#KR-2
-vless://456e3eab-57a7-428a-beba-1882d732d413@fan.yutian.us.kg:443?encryption=none&security=tls&sni=na.kiki.ltd.ua&type=ws&host=na.kiki.ltd.ua&path=%2Fargox-vl%3Fed%3D2048#KR-3
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIktSLTQiLA0KICAiYWRkIjogImNmLjA5MDIyNy54eXoiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiNDU2ZTNlYWItNTdhNy00MjhhLWJlYmEtMTg4MmQ3MzJkNDEzIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJub25lIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJuYS5raWtpLmx0ZC51YSIsDQogICJwYXRoIjogIi9hcmdveC12bT9lZD0yMDQ4IiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIm5hLmtpa2kubHRkLnVhIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
-trojan://456e3eab-57a7-428a-beba-1882d732d413@www.visa.com.sg:443?security=tls&sni=na.kiki.ltd.ua&type=ws&host=na.kiki.ltd.ua&path=%2Fargox-tr%3Fed%3D2048#KR-5
-vless://d3ad5fbb-dfae-4fc4-a1ac-babe8980edb3@34.81.113.106:31009?type=ws&security=none&path=%2F#tw
-vless://155fefb7-0372-4cd0-9920-dca142168387@167.253.152.247:43948?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.zara.com&fp=chrome&pbk=u3Wkc3afBBZV8jzmyZ_49BXp-2vsUJaQTkrzJ2k_0Cg&type=tcp&headerType=none#US-Cloudflare_Warp
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlVTLUNsb3VkZmxhcmVfV2FycCIsDQogICJhZGQiOiAid3d3LnZpc2EuY29tLnR3IiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjE1NWZlZmI3LTAzNzItNGNkMC05OTIwLWRjYTE0MjE2ODM4NyIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAibm9uZSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiaXNwLXRyaWFuZ2xlLW5ldHdvcmtpbmctbWkudHJ5Y2xvdWRmbGFyZS5jb20iLA0KICAicGF0aCI6ICIvdm1lc3M/ZWQ9MjA0OCIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICJpc3AtdHJpYW5nbGUtbmV0d29ya2luZy1taS50cnljbG91ZGZsYXJlLmNvbSIsDQogICJhbHBuIjogIiIsDQogICJmcCI6ICJyYW5kb21pemVkIg0KfQ==
-hysteria2://155fefb7-0372-4cd0-9920-dca142168387@167.253.152.247:43951/?sni=www.bing.com&alpn=h3&insecure=1#US-Cloudflare_Warp
-tuic://155fefb7-0372-4cd0-9920-dca142168387:KUPFWxDyT1e4hiceHglOw8ex@167.253.152.247:43950?sni=www.bing.com&alpn=h3&congestion_control=bbr#US-Cloudflare_Warp
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkRFIDEiLA0KICAiYWRkIjogInd3dy52aXNhLmNvbS5oayIsDQogICJwb3J0IjogIjIwNTMiLA0KICAiaWQiOiAiODMxMzM5MGMtYjQzZC00YTQxLWE1ZjAtYjI2NTNiMTYwODdjIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJub25lIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJvYml0dWFyaWVzLWNvbWUtbm90LWR1ZS50cnljbG91ZGZsYXJlLmNvbSIsDQogICJwYXRoIjogIi92bWVzcz9lZD0yMDQ4IiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIm9iaXR1YXJpZXMtY29tZS1ub3QtZHVlLnRyeWNsb3VkZmxhcmUuY29tIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogInJhbmRvbWl6ZWQiDQp9
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkRFIDIiLA0KICAiYWRkIjogInd3dy52aXNhLmNvbS5zZyIsDQogICJwb3J0IjogIjg0NDMiLA0KICAiaWQiOiAiODMxMzM5MGMtYjQzZC00YTQxLWE1ZjAtYjI2NTNiMTYwODdjIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJub25lIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJvYml0dWFyaWVzLWNvbWUtbm90LWR1ZS50cnljbG91ZGZsYXJlLmNvbSIsDQogICJwYXRoIjogIi92bWVzcz9lZD0yMDQ4IiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIm9iaXR1YXJpZXMtY29tZS1ub3QtZHVlLnRyeWNsb3VkZmxhcmUuY29tIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogInJhbmRvbWl6ZWQiDQp9
-vmess://eyAidiI6ICIyIiwgInBzIjogIkRFLUhldHpuZXJfT25saW5lIiwgImFkZCI6ICJ3d3cudmlzYS5jb20udHciLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiODMxMzM5MGMtYjQzZC00YTQxLWE1ZjAtYjI2NTNiMTYwODdjIiwgImFpZCI6ICIwIiwgInNjeSI6ICJub25lIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJvYml0dWFyaWVzLWNvbWUtbm90LWR1ZS50cnljbG91ZGZsYXJlLmNvbSIsICJwYXRoIjogIi92bWVzcz9lZD0yMDQ4IiwgInRscyI6ICJ0bHMiLCAic25pIjogIm9iaXR1YXJpZXMtY29tZS1ub3QtZHVlLnRyeWNsb3VkZmxhcmUuY29tIiwgImFscG4iOiAiIiwgImZwIjogInJhbmRvbWl6ZWQiLCAiYWxsb3dsbnNlY3VyZSI6ICJmbGFzZSJ9Cg==
-vless://6e9a3f6f-be26-4188-839d-725d0e646320@cf.yutian.us.kg:443?encryption=none&security=tls&sni=ji.kiki.ltd.ua&type=ws&host=ji.kiki.ltd.ua&path=%2Fargox-vl%3Fed%3D2048#RO-1
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlJPLTIiLA0KICAiYWRkIjogImNtY2MuMDkwMjI3Lnh5eiIsDQogICJwb3J0IjogIjIwOTYiLA0KICAiaWQiOiAiNmU5YTNmNmYtYmUyNi00MTg4LTgzOWQtNzI1ZDBlNjQ2MzIwIiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJub25lIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJqaS5raWtpLmx0ZC51YSIsDQogICJwYXRoIjogIi9hcmdveC12bT9lZD0yMDQ4IiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogImppLmtpa2kubHRkLnVhIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
-trojan://6e9a3f6f-be26-4188-839d-725d0e646320@cfip.xxxxxxxx.tk:8443?security=tls&sni=ji.kiki.ltd.ua&type=ws&host=ji.kiki.ltd.ua&path=%2Fargox-tr%3Fed%3D2048#RO-3
-vless://afb23e23-02ad-475f-874a-c0ff1bd18e20@visa.com.hk:443?encryption=none&security=tls&sni=fetish-wordpress-removed-commander.trycloudflare.com&type=ws&host=fetish-wordpress-removed-commander.trycloudflare.com&path=%2Fargox-vl%3Fed%3D2048#lxc7-Vl
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogImx4YzctVm0iLA0KICAiYWRkIjogInZpc2EuY29tIiwNCiAgInBvcnQiOiAiODQ0MyIsDQogICJpZCI6ICJhZmIyM2UyMy0wMmFkLTQ3NWYtODc0YS1jMGZmMWJkMThlMjAiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogIm5vbmUiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogImZldGlzaC13b3JkcHJlc3MtcmVtb3ZlZC1jb21tYW5kZXIudHJ5Y2xvdWRmbGFyZS5jb20iLA0KICAicGF0aCI6ICIvYXJnb3gtdm0/ZWQ9MjA0OCIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICJmZXRpc2gtd29yZHByZXNzLXJlbW92ZWQtY29tbWFuZGVyLnRyeWNsb3VkZmxhcmUuY29tIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=     
-hysteria2://fc44fe6a-f083-4591-9c03-f8d61dc3907f@31.186.85.171:42445/?sni=www.bing.com&alpn=h3&insecure=1#PL-Atman_Sp._z_o.o.
-hysteria2://fc44fe6a-f083-4591-9c03-f8d61dc3907f@31.186.85.171:5555/?sni=www.bing.com&alpn=h3&insecure=1#PL-Atman_Sp._z_o.o.
-vless://818130f3-1d37-42e8-9c19-6c6309e10921@144.22.133.91:60702?encryption=none&security=reality&sni=addons.mozilla.org&fp=chrome&pbk=rekFm84-qSfHe7xc9zUAb47agIcst9CgN1dBXxBUJwc&type=tcp&headerType=none#%E5%B7%B4%E8%A5%BF-1
-vless://818130f3-1d37-42e8-9c19-6c6309e10921@fan.yutian.us.kg:443?encryption=none&security=tls&sni=1.kiki.ltd.ua&type=ws&host=1.kiki.ltd.ua&path=%2Fsba-vl%3Fed%3D2048#%E5%B7%B4%E8%A5%BF-2
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlx1NURGNFx1ODk3Ri0zIiwNCiAgImFkZCI6ICJjZmlwLnh4eHh4eHh4LnRrIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjgxODEzMGYzLTFkMzctNDJlOC05YzE5LTZjNjMwOWUxMDkyMSIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAibm9uZSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiMS5raWtpLmx0ZC51YSIsDQogICJwYXRoIjogIi9zYmEtdm0/ZWQ9MjA0OCIsDQogICJ0bHMiOiAidGxzIiwNCiAgInNuaSI6ICIxLmtpa2kubHRkLnVhIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
-trojan://818130f3-1d37-42e8-9c19-6c6309e10921@cloudflare.182682.xyz:443?security=tls&sni=1.kiki.ltd.ua&type=ws&host=1.kiki.ltd.ua&path=%2Fsba-tr%3Fed%3D2048#%E5%B7%B4%E8%A5%BF-4
-vless://dc66a47d-60a7-49a9-8846-88a959dae578@152.53.44.79:16101?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.svix.com&fp=chrome&pbk=HF6x7UIK68jo8WBOKG8uROYTbsB6RnvI8Mqd9e5DaGU&type=tcp&headerType=none#AT-netcup
-vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkFULW5ldGN1cCIsDQogICJhZGQiOiAiYWxpeXVuLjIwOTYudXMua2ciLA0KICAicG9ydCI6ICIyMDk2IiwNCiAgImlkIjogImRjNjZhNDdkLTYwYTctNDlhOS04ODQ2LTg4YTk1OWRhZTU3OCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAibm9uZSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiMi5raWtpLmx0ZC51YSIsDQogICJwYXRoIjogIi92bWVzcz9lZD0yMDQ4IiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIjIua2lraS5sdGQudWEiLA0KICAiYWxwbiI6ICIiLA0KICAiZnAiOiAicmFuZG9taXplZCINCn0=
 
-hysteria2://dc66a47d-60a7-49a9-8846-88a959dae578@152.53.44.79:16102/?sni=www.bing.com&alpn=h3&insecure=1#AT-netcup
-
-tuic://dc66a47d-60a7-49a9-8846-88a959dae578:PkyFw5tF1J5n9teypTc0F5yA@152.53.44.79:16103?sni=www.bing.com&alpn=h3&congestion_control=bbr#AT-netcup
 `
 
 let urls = [];
