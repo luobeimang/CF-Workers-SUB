@@ -13,7 +13,9 @@ let timestamp = 4102329600000;//2099-12-31
 let cacheTTL = 24 ;//小时，缓存时长
 
 //节点链接 + 订阅链接
-let MainData = ` vless://da3bd8e4-5238-4c4f-a386-212deba26fd9@aliyun.2096.us.kg:2096?encryption=none&security=tls&sni=3.kiki.ltd.ua&type=ws&host=3.kiki.ltd.ua&path=%2Fargox-vl%3Fed%3D2048#JP-1 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkpQLTIiLA0KICAiYWRkIjogImNmaXAueHh4eHh4eHgudGsiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiZGEzYmQ4ZTQtNTIzOC00YzRmLWEzODYtMjEyZGViYTI2ZmQ5IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJub25lIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIzLmtpa2kubHRkLnVhIiwNCiAgInBhdGgiOiAiL2FyZ294LXZtP2VkPTIwNDgiLA0KICAidGxzIjogInRscyIsDQogICJzbmkiOiAiMy5raWtpLmx0ZC51YSIsDQogICJhbHBuIjogIiIsDQogICJmcCI6ICIiDQp9 trojan://da3bd8e4-5238-4c4f-a386-212deba26fd9@skk.moe:443?security=tls&sni=3.kiki.ltd.ua&type=ws&host=3.kiki.ltd.ua&path=%2Fargox-tr%3Fed%3D2048#JP-3
+let MainData = ` 
+
+
 
 `
 
